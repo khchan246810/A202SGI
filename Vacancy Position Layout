@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Top Bar with back arrow (you can use Toolbar for more functionality) -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back" /> <!-- Replace with your arrow icon -->
+
+    <!-- Vacancy Position Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vacancy Position"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Profile Image -->
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="#D3D3D3" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:layout_marginTop="30dp"
+        />
+    <!-- Text-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="A paragraph of text describing the employer's profile" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="300dp"
+        android:text="Apply"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="618dp" />
+
+
+    <!-- Other components go here -->
+
+</LinearLayout>

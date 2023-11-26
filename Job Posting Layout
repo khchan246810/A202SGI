@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Top Bar with back arrow (you can use Toolbar for more functionality) -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back" /> <!-- Replace with your arrow icon -->
+
+    <!-- Profile Image -->
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="#D3D3D3" />
+
+    <Spinner
+        android:layout_marginTop="30dp"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort by" />
+
+    <!-- Grid of Images -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:columnCount="1"
+        android:rowCount="3"
+        android:layout_marginTop="30dp">
+
+        <!-- You can add your ImageViews here -->
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginRight="10dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_weight="1"
+            android:background="#D3D3D3" />
+
+
+
+    </GridLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:background="#D3D3D3" />
+</GridLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:background="#D3D3D3" />
+    </GridLayout>
+
+    <!-- Other components go here -->
+
+</LinearLayout>

@@ -2,79 +2,354 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:scaleType="centerCrop"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/home_background"
+    android:src="@drawable/black_shade"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/Relative_ll"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@drawable/black_shade"
+        android:scaleType="centerCrop"
+        android:orientation="horizontal"
+        android:padding="10dp">
 
     <!-- Top Bar with back arrow (you can use Toolbar for more functionality) -->
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_arrow_back" /> <!-- Replace with your arrow icon -->
+    <Button
+        android:id="@+id/goback"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/back"
+        /> <!-- Replace with your arrow icon -->
+
 
     <!-- Profile Image -->
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp"
-        android:background="#D3D3D3" />
+        android:layout_marginLeft="100dp"
+        android:src="@drawable/sales_associate"
 
-    <Spinner
-        android:layout_marginTop="30dp"
-        android:layout_gravity="end"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sort by" />
+        />
+        <Spinner
+            android:layout_gravity="end"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="250dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort by" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="-200dp" 
+        android:background="@drawable/lightbluehighlight"
+        android:orientation="vertical"
+
+        android:padding='10dp'>
+
+    </RelativeLayout>
+
+
 
     <!-- Grid of Images -->
     <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_width="750dp"
+        android:layout_height="175dp"
         android:columnCount="1"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:background="@drawable/rectangle_frame"
         android:rowCount="3"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="-550dp">
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:text="CLUB 21"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_weight="1" />
 
         <!-- You can add your ImageViews here -->
         <ImageView
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_marginRight="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
             android:layout_row="0"
             android:layout_column="0"
             android:layout_weight="1"
-            android:background="#D3D3D3" />
-
-
-
-    </GridLayout>
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:layout_marginTop="30dp">
-
-        <ImageView
+            android:background="@drawable/club21" />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:text="5hr ago"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_weight="1" />
+        <Button
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
-            android:layout_row="1"
+            android:layout_marginLeft="335dp"
+            android:layout_marginTop="70dp"
+            android:textColor="@color/white"
+            android:text="Apply"
+            android:layout_row="0"
             android:layout_column="0"
-            android:background="#D3D3D3" />
-</GridLayout>
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="335dp"
+            android:layout_marginTop="120dp"
+            android:textColor="@color/white"
+            android:text="RM15/hour"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:text="Location: Bukit Jalil, Kuala Lumpur"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:text="Starting Date: 1/3/2023"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:text="Ending Date: 1/5/2023"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="70dp"
+            android:textColor="@color/white"
+            android:text="Working Hours: 9am-9pm (12h)"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="90dp"
+            android:textColor="@color/white"
+            android:text="Benefits: EPF"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_weight="1" />
+    </GridLayout>
     <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:layout_marginTop="30dp">
-
-        <ImageView
+        android:layout_width="750dp"
+        android:layout_height="175dp"
+        android:columnCount="1"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:background="@drawable/rectangle_frame"
+        android:rowCount="3"
+        android:layout_marginTop="9dp">
+        <TextView
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
-            android:layout_row="2"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:text="Dutch Lady"
+            android:layout_row="0"
             android:layout_column="0"
-            android:background="#D3D3D3" />
+            android:layout_weight="1" />
+
+        <!-- You can add your ImageViews here -->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_weight="1"
+            android:background="@drawable/dutchlady" />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:text="2d ago"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_weight="1" />
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="335dp"
+            android:layout_marginTop="70dp"
+            android:textColor="@color/white"
+            android:text="Apply"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="335dp"
+            android:layout_marginTop="120dp"
+            android:textColor="@color/white"
+            android:text="RM10/hour"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:text="Location: Bukit Jalil, Kuala Lumpur"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:text="Starting Date: 1/4/2023"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:text="Ending Date: N/A"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="70dp"
+            android:textColor="@color/white"
+            android:text="Working Hours: 8am-5pm (9h)"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="90dp"
+            android:textColor="@color/white"
+            android:text="Benefits: Lunch provided, EPF"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_weight="1" />
     </GridLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="117dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <ImageButton
+                android:id="@+id/homeIconButton"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="0.01dp"
+                android:paddingBottom="14dp"
+
+                android:src="@drawable/shade_home_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/jobIconButton"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="0.01dp"
+                android:paddingBottom="14dp"
+                android:src="@drawable/job_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/notification"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="0.01dp"
+                android:paddingBottom="14dp"
+                android:src="@drawable/text_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/profileIconButton"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="0.01dp"
+                android:paddingBottom="14dp"
+                android:src="@drawable/profile_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     <!-- Other components go here -->
 

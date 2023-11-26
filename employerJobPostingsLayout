@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="centerCrop"
+    android:orientation="vertical"
+    android:background="@drawable/home_background"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/linear_ll"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/black_shade"
+        android:scaleType="centerCrop"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/simpleImageButtonHome"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="20dp"
+            android:background="@drawable/baseline_arrow_back_24"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="500dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:text="Job Posting"
+            android:textColor="#00D1FF"
+            android:textSize="32dp"
+            android:layout_marginTop="-20dp"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/lightbluehighlight"
+        android:orientation="vertical"
+
+        android:padding='10dp'>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="-700dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/box"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+        
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="-235dp"
+            android:text="Job Name:"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/jobName"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-235dp"
+            android:background="@drawable/shape1"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-310dp"
+            android:layout_marginTop="-170dp"
+            android:text="Job Description:"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/jobDescription"
+            android:layout_width="250dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="-170dp"
+            android:background="@drawable/shape1"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-405dp"
+            android:layout_marginTop="-110dp"
+            android:text="Nature of Job:"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/jobNature"
+            android:layout_width="250dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="-110dp"
+            android:background="@drawable/shape1"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-380dp"
+            android:layout_marginTop="-50dp"
+            android:text="Location:"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/jobLocation"
+            android:layout_width="250dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/shape1"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="-345dp"
+            android:text="Wage per hour:"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/wage"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape1"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="-245dp"
+            android:text="Minimum Age:"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/minAge"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape1"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="-245dp"
+            android:text="Maximum Age:"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/maxAge"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape1"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:layout_marginLeft="-250dp"
+            android:text="Number of Vacancy:"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/numVacancy"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape1"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/post"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="-130dp"
+            android:layout_marginTop="260dp"
+            android:background="@drawable/bg_btn"
+            android:text="Post"
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <ImageButton
+                android:id="@+id/homeIconButton"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="0.01dp"
+                android:paddingBottom="14dp"
+
+                android:src="@drawable/shade_home_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/jobIconButton"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="0.01dp"
+                android:paddingBottom="14dp"
+                android:src="@drawable/job_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/notification"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="0.01dp"
+                android:paddingBottom="14dp"
+                android:src="@drawable/text_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/profileIconButton"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="0.01dp"
+                android:paddingBottom="14dp"
+                android:src="@drawable/profile_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</LinearLayout>

@@ -1,55 +1,193 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:padding="16dp">
+    tools:context=".MainActivity">
 
-    <!-- Top Bar with back arrow (you can use Toolbar for more functionality) -->
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_arrow_back" /> <!-- Replace with your arrow icon -->
-
-    <!-- Vacancy Position Title -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Vacancy Position"
-        android:layout_gravity="center"
-        android:textSize="20sp"
-        android:layout_marginTop="8dp" />
-
-    <!-- Profile Image -->
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp"
-        android:background="#D3D3D3" />
-    <View
+        android:id="@+id/background_image"
         android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#000000"
-        android:layout_marginTop="30dp"
-        />
-    <!-- Text-->
+        android:layout_height="match_parent"
+        android:src="@drawable/home_background"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/blue_shade"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/black_shade"
+        tools:ignore="MissingConstraints" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="A paragraph of text describing the employer's profile" />
+        android:fontFamily="@font/copse"
+        android:textSize="30dp"
+        android:text="Vacancy Position 1"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/backButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"/>
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="550dp"
+        android:background="@drawable/rectangle_frame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:layout_width="190dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/sales_associate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"/>
+
+    <ImageView
+        android:layout_width="349dp"
+        android:layout_height="1dp"
+        android:background="@drawable/line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.398" />
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="300dp"
+        android:fontFamily="@font/copse"
+        android:textSize="12dp"
+        android:text="A paragraph of text describing the employer's profile"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <Button
+        android:id="@+id/vacancy1Button"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:background="@drawable/button_apply_background"
+        android:fontFamily="@font/copse"
         android:text="Apply"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="618dp" />
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:layout_marginTop="-200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.843" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="-75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <ImageButton
+                android:id="@+id/homeIconButton"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="0.01dp"
+                android:paddingBottom="14dp"
+
+                android:src="@drawable/shade_home_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/jobIconButton"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="0.01dp"
+                android:paddingBottom="14dp"
+                android:src="@drawable/job_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/notification"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="0.01dp"
+                android:paddingBottom="14dp"
+                android:src="@drawable/text_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/profileIconButton"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="0.01dp"
+                android:paddingBottom="14dp"
+                android:src="@drawable/profile_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 
 
     <!-- Other components go here -->
